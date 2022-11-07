@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    
+   
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Buscar coctel.."
+        />
+        <button id="search">Buscar</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">Todo</button>
+        <button class="button-value" onclick="filterProduct('Baileys')">
+          Baileys
+        </button>
+        <button class="button-value" onclick="filterProduct('Brandy')">
+          Brandy
+        </button>
+        <button class="button-value" onclick="filterProduct('Cafe')">
+          Cafe
+        </button>
+        <button class="button-value" onclick="filterProduct('Cerveza')">
+          Cerveza
+        </button>
+        <button class="button-value" onclick="filterProduct('Gin')">
+          Gin
+        </button>
+        <button class="button-value" onclick="filterProduct('Jagger')">
+          Jagger
+        </button>
+        <button class="button-value" onclick="filterProduct('Kahlua')">
+          Kahlua
+        </button>
+        <button class="button-value" onclick="filterProduct('Quezalteca')">
+          Quezalteca
+        </button>
+        <button class="button-value" onclick="filterProduct('Tequila')">
+          Tequila
+        </button>
+        <button class="button-value" onclick="filterProduct('Ron')">
+          Ron
+        </button>
+        <button class="button-value" onclick="filterProduct('Vino')">
+          Vino
+        </button>
+        <button class="button-value" onclick="filterProduct('Vodka')">
+          Vodka
+        </button>
+        <button class="button-value" onclick="filterProduct('Whisky')">
+          Whisky
+        </button>
+      </div>
+      
+
+      <article id="products"></article>
+   
+
+      <a href="#modal-1" class="modal-link">Ver descripcion</a>
+      <article id="modal-1" class="modal-window">
+        <div class="modal-container">
+            <a href="#cerrar" class="modal-close">X</a>
+            <h2>titulo de la ventana modal</h2>
+            <p>parrafo de la ventana modal</p>
+            <ul>
+                <li>lista 1</li>
+                <li>lista 2</li>
+                <li>lista 3</li>
+            </ul>
+        </div>
+      </article>
+     
+
+     
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+ 
+  </body>
+</html>
